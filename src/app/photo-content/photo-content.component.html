@@ -1,0 +1,8 @@
+<div class="picture-container">
+  <div class="image-content" *ngIf="imgSrc;else defaultImage">
+      <img class="image-data" [src] = "imgSrc"/>  
+  </div>    
+  <ng-template #defaultImage>    
+    <div class="default-image-content">Please Add Image Using Image Button or Drop file here.</div>
+  </ng-template>
+</div>

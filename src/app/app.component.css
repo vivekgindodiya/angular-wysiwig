@@ -1,0 +1,9 @@
+.home-contaier{
+    height: 500px;
+    width: 700px;
+    min-height: 500px;
+    min-width: 700px;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid black;
+}

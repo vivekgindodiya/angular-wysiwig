@@ -1,0 +1,25 @@
+<div class="post-container">
+  <div class="toolbar-container">
+    <div class="btn-group">
+      <button class="action-btn icon-bold" [style.background-color]="boldStyle ? 'blue' : 'white'" (click)="toggleBold()">
+      </button>
+      <button class="action-btn icon-italic" [style.background-color]="italicStyle ? 'blue' : 'white'" (click)="toggleItalic()">
+      </button>
+      <button class="action-btn icon-underline" [style.background-color]="uderlineStyle ? 'blue' : 'white'" (click)="toggleUnderline()">
+      </button>
+      <button class="action-btn icon-link" (click)="createLink()">
+      </button>
+      <button class="action-btn icon-image" (click)="addImage()">
+        <input #imgInput type="file" (change)="displayImage($event)"/>
+      </button>
+      <button class="action-btn icon-preview" [style.background-color]="previewMode ? 'blue' : 'white'" (click)="previewPost()">
+      </button>
+    </div>
+  </div>
+  <div class="post-content-container" [class.preview-mode]="previewMode">
+    <div class="post-photo-container">
+      <app-photo-content [imgSrc]= "imageSrc"></app-photo-content>
+    </div>
+    <div #editView class="editable-view" [attr.contenteditable]="contenteditable"></div><input type="file">
+  </div>
+</div>

@@ -1,0 +1,87 @@
+.post-container{
+    height: 100%;
+}
+.toolbar-container{
+    height: 8%;
+    position: relative;
+}
+.post-content-container{
+    height: 92%; 
+}
+.btn-group{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.btn-group .action-btn{
+    border: 1px solid black;
+}
+.btn-group .action-btn:first-child{
+    border-radius: 5px 0 0 5px;
+}
+.btn-group .action-btn:last-child{
+    border-radius: 0 5px 5px 0;
+}
+
+.action-btn{
+    height: 30px;
+    width: 30px;
+}
+.icon-bold{
+    background: url('../../assets/images/bold.png') no-repeat center;
+    background-size: contain;
+}
+.icon-italic{
+    background: url('../../assets/images/italic.png') no-repeat center;
+    background-size: contain;
+}
+.icon-underline{
+    background: url('../../assets/images/underline.png') no-repeat center;
+    background-size: contain;
+}
+.icon-link{
+    background: url('../../assets/images/hyperlink.png') no-repeat center;
+    background-size: contain;
+}
+.icon-image{
+    background: url('../../assets/images/image.png') no-repeat center;
+    background-size: contain;
+}
+.icon-preview{
+    background: url('../../assets/images/preview.png') no-repeat center;
+    background-size: contain;
+}
+.action-btn input{
+    display: none;
+    height: 30px;
+    width: 30px;
+}
+.editable-view{
+    border-radius: 5px;
+    border: 1px solid black;
+    height: 50%;
+    font-family:helvetica;
+    font-size: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.post-container input{
+    display: none;
+}
+.post-photo-container{
+    height: 50%;
+    width: 30%;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.preview-mode *{
+    border-width: 0;
+}
+.preview-mode .editable-view{
+    padding: 10px 0;
+}
+.post-content-container.preview-mode{
+    border-radius: 5px;
+    border: 1px solid black;
+}
